@@ -48,15 +48,15 @@ export default function LandingPage() {
           <button
             key={section.id}
             className={`w-3 h-3 rounded-full my-2 transition-all ${
-              index === activeSection ? 'bg-white scale-150' : 'bg-gray-600'
+              index === activeSection ? 'bg-amber-400 scale-150' : 'bg-amber-900'
             }`}
             onClick={() => handleNavClick(index)}
           />
         ))}
       </nav>
       <motion.div
-        className="fixed top-0 left-0 right-0 h-0.5 bg-white origin-left z-30"
-        style={{ scaleX }}
+        className="fixed top-0 left-0 right-0 h-0.5 origin-left z-30"
+        style={{ scaleX, background: 'linear-gradient(90deg, #b45309, #f59e0b, #fcd34d)' }}
       />
       <div
         ref={containerRef}
